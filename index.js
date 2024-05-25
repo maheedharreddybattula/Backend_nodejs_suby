@@ -9,7 +9,7 @@ const firmRoutes=require('./routes/firmRoute')
 const productRoute = require('./routes/productRoutes')
 const path = require('path')
 //const cors = require('cors')
-const PORT =4000;
+const PORT = process.env.PORT || 4000;
 
 
 doTenv.config();
@@ -26,6 +26,6 @@ app.listen(PORT, ()=>{
     console.log(`server started at ${PORT}`)
 })
 
-app.use('/home',(request,response)=>{
-    response.send("<h1>Welcome to suby resytarunts</h1>")
+app.use('/',(request,response)=>{
+    response.send("<h1>Welcome to Maheedhar Restaurants! How can I assist you today?</h1>")
 })
