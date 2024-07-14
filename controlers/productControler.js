@@ -3,6 +3,7 @@
 const Product = require("../model/Product");
 const multer = require ("multer");
 const Firm = require("../model/Firm");
+const path = require('path')
 
 
 
